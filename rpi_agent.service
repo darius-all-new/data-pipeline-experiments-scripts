@@ -1,0 +1,10 @@
+[Unit]
+Description=Get data from Enviro
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /path/to/script/rpi_agent.py
+ 
+[Install]
+WantedBy=multi-user.target
